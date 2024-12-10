@@ -1,0 +1,17 @@
+Estudante (ID_Estudante, Nome, Matrícula, Curso, Contato)
+Professor (ID_Professor, Nome, Registro_Funcional, Departamento, Contato)
+Funcionário (ID_Funcionário, Nome, Registro_Funcional, Setor, Contato)
+Material (ID_Material, Título, Autor, Tipo, Categoria, Ano, Quantidade_Disponível)
+Empréstimo (ID_Empréstimo, ID_Usuário, ID_Material, Data_Empréstimo, Data_Devolução, Status)
+Reserva (ID_Reserva, ID_Usuário, ID_Material, Data_Reserva, Status)
+
+Entidades e Relacionamentos:
+
+1. Estudante "realiza" Empréstimo (1,N)
+2. Professor "realiza" Empréstimo (1,N)
+3. Funcionário "realiza" Empréstimo (1,N)
+4. Empréstimo "inclui" Material (1,N)
+5. Estudante "faz" Reserva (1,N)
+6. Professor "faz" Reserva (1,N)
+7. Funcionário "faz" Reserva (1,N)
+8. Reserva "refere-se" Material (1,N)
